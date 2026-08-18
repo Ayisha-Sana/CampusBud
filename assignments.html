@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>CampusBud</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <p id="date" class="date">Date: 5th November 2026</p>
+            <h1 class="app-title">CampusBud</h1>
+            <img class="logo"src="assets/logo.png" alt="CampusBuddy logo">
+        </header>
+        <nav class='navbar'>
+            <a href="index.html">Dashboard</a>
+            <a class='nav-link' href="#">Assignments</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="academics.html">Academics</a>
+        </nav>
+        <main class="asgm-main">
+            <div class="add-asgm card">
+                <h2>Add Assignments</h2>
+                <form>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="english">English</option>
+                    </select>
+                    <label for="description">Description</label>
+                    <input id="description" placeholder="eg. Worksheet">
+                    <label for="due-date">Due date</label>
+                    <input id="due-date" type="date">
+                    <button type="submit">Add Assignment</button>
+                </form>
+            </div>
+            <div class="top-asgm">
+                <h2>Due Today</h2>
+                <div class="card">
+                    <input type="checkbox">
+                    <h3>Physics: Worksheet</h3>
+                    <p>due on 5th November 2026</p>
+                </div>
+            </div>
+            <div class="asgm">
+                <h2>Upcoming</h2>
+                <div class="card">
+                    <input type="checkbox">
+                    <h3>Chemistry: Activity</h3>
+                    <p>due on 15th November 2026</p>
+                </div>
+                <div class="card">
+                    <input type="checkbox">
+                    <h3>Computer Science: Record</h3>
+                    <p>due on 19th November 2026</p>
+                </div>
+            </div>
+            <div class="completed-list">
+                <h2>Completed</h2>
+                <div class="card completed">
+                    <input type="checkbox" checked>
+                    <h3>Mathematics: Worksheet</h3>
+                    <p>completed on 30th October 2026</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>CampusBud</p>
+            <p>Version 0.1.0</p>
+            <p>Designed & developed by Ayisha Sana</p>
+            <p>Made with ☕ & 💗</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

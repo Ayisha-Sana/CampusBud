@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>CampusBud</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <p id="date" class="date">Date: 5th November 2026</p>
+            <h1 class="app-title">CampusBud</h1>
+            <img class="logo"src="assets/logo.png" alt="CampusBuddy logo">
+        </header>
+        <nav class='navbar'>
+            <a href="index.html">Dashboard</a>
+            <a href="assignments.html">Assignments</a>
+            <a class='nav-link' href="#">Attendance</a>
+            <a href="academics.html">Academics</a>
+        </nav>        
+       <main class="attendance-main">
+
+            <section class="overall-attendance card">
+                <h2>Overall Attendance</h2>
+                <p>97%</p>
+            </section>
+
+            <section class="subject-attendance card">
+                <h2>Subject Attendance</h2>
+
+                <div class="subject">
+                    <div class="subject-header">
+                        <span>Physics</span>
+                        <span>96%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill" style="width:96%;"></div>
+                    </div>
+                </div>
+
+                <div class="subject">
+                    <div class="subject-header">
+                        <span>Chemistry</span>
+                        <span>99%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill" style="width:99%;"></div>
+                    </div>
+                </div>
+
+                <div class="subject">
+                    <div class="subject-header">
+                        <span>Mathematics</span>
+                        <span>95%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill" style="width:95%;"></div>
+                    </div>
+                </div>
+
+                <div class="subject">
+                    <div class="subject-header">
+                        <span>Computer Science</span>
+                        <span>98%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill" style="width:98%;"></div>
+                    </div>
+                </div>
+
+                <div class="subject">
+                    <div class="subject-header">
+                        <span>English</span>
+                        <span>97%</span>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill" style="width:97%;"></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="record-attendance card">
+                <h2>Today's Classes</h2>
+                <p class="subtitle">Uncheck any class you missed today.</p>
+                <form class="attendance-form">
+                    <label class="attendance-item">
+                        <input type="checkbox" checked>
+                        <span>Physics</span>
+                    </label>
+
+                    <label class="attendance-item">
+                        <input type="checkbox" checked>
+                        <span>Chemistry</span>
+                    </label>
+
+                    <label class="attendance-item">
+                        <input type="checkbox" checked>
+                        <span>Mathematics</span>
+                    </label>
+
+                    <label class="attendance-item">
+                        <input type="checkbox" checked>
+                        <span>Computer Science</span>
+                    </label>
+
+                    <button type="submit">Save Attendance</button>
+                </form>
+            </section>
+
+            <section class="attendance-stats card">
+                <h2>Statistics</h2>
+                <p>Total classes: 203</p>
+                <p>Classes missed: 5</p>
+                <p>Attended classes: 198</p>
+            </section>
+
+        </main>
+        <footer>
+            <p>CampusBud</p>
+            <p>Version 0.1.0</p>
+            <p>Designed & developed by Ayisha Sana</p>
+            <p>Made with ☕ & 💗</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

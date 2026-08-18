@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>CampusBud</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <p id="date" class="date">Date: 5th November 2026</p>
+            <h1 class="app-title">CampusBud</h1>
+            <img class="logo"src="assets/logo.png" alt="CampusBuddy logo">
+        </header>
+        <nav class='navbar'>
+            <a href="index.html">Dashboard</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="attendance.html">Attendance</a>
+            <a class='nav-link' href="#">Academics</a>
+        </nav>        
+       <main class="academics-main">
+
+            <section class="sgpa card">
+                <h2>Current SGPA</h2>
+                <span>9.2</span>
+            </section>
+
+            <section class="cgpa card">
+                <h2>Current CGPA</h2>
+                <span>9.0</span>
+            </section>
+
+            <section class="add-exam card">
+                <h2>Add Exam</h2>
+                <form>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="english">English</option>
+                    </select>
+                    <label for="exam-name">Exam name</label>
+                    <input id="exam-name" placeholder="eg. Midterm">
+                    <label for="date">Date</label>
+                    <input id="date" type="date">
+                    <label for="maximum-marks">Maximum marks</label>
+                    <input id="maximum-marks" placeholder="eg. 100">
+                    <button type="submit">Add Exam</button>
+                </form>
+            </section>
+
+            <section class="upcoming-exams">
+                <h2>Upcoming Exams</h2>
+                <div class="card">
+                    <p>Physics Midterm</p>
+                    <p>12 Nov 2026</p>
+                </div>
+                <div class="card">
+                    <p>Chemistry Midterm</p>
+                    <p>18 Nov 2026</p>
+                </div>
+            </section>
+
+            <section class="exam-results">
+                <h2>Exam Results</h2>
+                <div class="card">
+                    <p>Physics Midterm</p>
+
+                    <span>92 / 100</span>
+
+                    <button>Edit Marks</button>
+                </div>
+            </section>
+
+  
+            <section class="subject-grades card">
+                <h2>Subject Grades</h2>
+
+                <div class="subject-grade">
+                    <span class="grade-subject">Physics</span>
+                    <span class="grade-letter">A</span>
+                </div>
+
+                <div class="subject-grade">
+                    <span class="grade-subject">Chemistry</span>
+                    <span class="grade-letter">O</span>
+                </div>
+
+                <div class="subject-grade">
+                    <span class="grade-subject">Mathematics</span>
+                    <span class="grade-letter">A+</span>
+                </div>
+
+                <div class="subject-grade">
+                    <span class="grade-subject">Computer Science</span>
+                    <span class="grade-letter">O</span>
+                </div>
+
+                <div class="subject-grade">
+                    <span class="grade-subject">English</span>
+                    <span class="grade-letter">A</span>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>CampusBud</p>
+            <p>Version 0.1.0</p>
+            <p>Designed & developed by Ayisha Sana</p>
+            <p>Made with ☕ & 💗</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
